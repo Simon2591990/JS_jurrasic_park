@@ -57,7 +57,10 @@ describe('Park', function() {
     assert.deepEqual(actual, [littlefoot, littlefootsMother])
   });
 
-  it('should be able to calculate the total number of visitors per day');
+  it('should be able to calculate the total number of visitors per day', function(){
+    const actual = park.visitorsToday();
+    assert.strictEqual(actual, 39);
+  });
 
   xit('should be able to calculate the total number of visitors per year');
 
