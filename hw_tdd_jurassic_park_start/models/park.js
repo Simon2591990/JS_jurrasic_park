@@ -27,4 +27,16 @@ Park.prototype.mostPopular = function(){
     }
     return result
 }
+
+Park.prototype.findBySpecies = function(species){
+    let result = [];
+    for( i=0; i<this.dinosaurs.length; i++){
+        if ( this.dinosaurs[i].species === species){
+            result.push(this.dinosaurs[i]);
+        }
+    }
+    return result
+}
+
+
 module.exports = Park;
